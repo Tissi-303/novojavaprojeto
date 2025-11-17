@@ -4,12 +4,18 @@ public class User {
     protected int telefone;
     protected String email;
 
+    public User (){
+
+    }
+    public User(String nome, String email, int telefone, double cpf) {
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.cpf = cpf;
+    }
 
 
-
-
-
-    //geters and setters
+//getters and setters
 
     public String getNome() {
         return nome;

@@ -1,10 +1,29 @@
-public class Loja {
+public class Loja extends User {
     private String razaosocial;
     private String nomefantasia;
     private String categoriadaloja;
     private String enderecocomercial;
 
+    //Construtores
 
+    public Loja(String razaosocial, String nomefantasia, String categoriadaloja, String enderecocomercial) {
+
+        super (nome, cpf);
+        this.razaosocial = razaosocial;
+        this.nomefantasia = nomefantasia;
+        this.categoriadaloja = categoriadaloja;
+        this.enderecocomercial = enderecocomercial;
+
+
+
+    }
+
+
+
+
+
+
+    //getter and Setters
 
     public String getRazaosocial() {
         return razaosocial;
