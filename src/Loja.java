@@ -1,27 +1,20 @@
-public class Loja extends User {
+public class Loja {
     private String razaosocial;
     private String nomefantasia;
     private String categoriadaloja;
     private String enderecocomercial;
 
+    private User dono;
+
     //Construtores
 
-    public Loja(String razaosocial, String nomefantasia, String categoriadaloja, String enderecocomercial) {
-
-        super (nome, cpf);
+    public Loja(String razaosocial, User dono, String enderecocomercial, String categoriadaloja, String nomefantasia) {
         this.razaosocial = razaosocial;
-        this.nomefantasia = nomefantasia;
-        this.categoriadaloja = categoriadaloja;
+        this.dono = dono;
         this.enderecocomercial = enderecocomercial;
-
-
-
+        this.categoriadaloja = categoriadaloja;
+        this.nomefantasia = nomefantasia;
     }
-
-
-
-
-
 
     //getter and Setters
 
@@ -31,6 +24,14 @@ public class Loja extends User {
 
     public void setRazaosocial(String razaosocial) {
         this.razaosocial = razaosocial;
+    }
+
+    public User getDono() {
+        return dono;
+    }
+
+    public void setDono(User dono) {
+        this.dono = dono;
     }
 
     public String getEnderecocomercial() {
