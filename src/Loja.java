@@ -1,4 +1,4 @@
-public class Loja extends User {
+public class Loja {
     private String razaosocial;
     private String nomefantasia;
     private String categoriadaloja;
